@@ -1,6 +1,6 @@
 # nexus local devenv
 
-Comes with pre-mined addresses visible in [EL genesis.json](./geth/genesis.json).
+Comes with pre-mined addresses visible in [EL genesis.json](./geth/genesis.json#L31-L40).
 
 You can change the genesis.json file to include your own addresses and balances,
 just make sure to edit the  `execution_genesis_hash` in [nexus config.yaml](./nexus/config.yaml)
@@ -13,9 +13,6 @@ make run
 ```
 
 Runs the containers needed for a local nexus network.
-
-```
-```
 
 ## Clean
 
