@@ -1,13 +1,13 @@
 services:
   geth-init:
-    image: "ghcr.io/route3/apex-geth:latest"
+    image: "ghcr.io/route3/nexus-geth:latest"
     command: --datadir=/geth init /geth-init/genesis.json
     volumes:
       - ./geth:/geth-init
       - geth:/geth
 
   geth:
-    image: "ghcr.io/route3/apex-geth:latest"
+    image: "ghcr.io/route3/nexus-geth:latest"
     command:
       - --verbosity=5
       - --http
